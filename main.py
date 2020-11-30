@@ -1,16 +1,16 @@
 import json
 from unicodedata import normalize
 
-#Normalizar a texto 
+#Funcao para normalizar a texto 
 def remover_acentos(txt):
     return normalize('NFKD', txt).encode('ASCII', 'ignore').decode('ASCII')
 
-#Arquivo com o json das perguntas e respostas
+#Lê o arquivo store.json
 with open('store.json') as json_file:
     data = json.load(json_file)
 
-questoes=6 #Define quantas questoes tera
-alternativas=4 #Define a quantidade de alternativas
+questoes=6 #Quantidade de questoes
+alternativas=4 #Quantidade de alternativas
 k=0
 for i in range(questoes*2):
     if i % 2 == 0:        
