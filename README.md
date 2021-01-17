@@ -14,3 +14,5 @@
 - Run the Script
 - If error returns, the value in script will need to be modified, number of questions or number of alternatives (or just put a hight value to both)
 
+| This program is a just json parsing,  to retrieve the information fast of page.
+
